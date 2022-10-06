@@ -138,15 +138,15 @@ function Home() {
             </FormControl>
 
             <FormControl mb={4}>
-              <FormLabel>Porcentagem de acontecer o evento ( em % )</FormLabel>
+              <FormLabel>Variável X</FormLabel>
               <NumberInput
                 bg={"white"}
                 rounded={8}
                 color={"black"}
-                onChange={(val) => setP(val)}
-                value={percentage}
+                onChange={(val) => setX(val)}
+                value={xVar}
                 min={0}
-                max={100}
+                max={nVar}
               >
                 <NumberInputField />
                 <NumberInputStepper>
@@ -157,15 +157,15 @@ function Home() {
             </FormControl>
 
             <FormControl mb={8}>
-              <FormLabel>Variável X</FormLabel>
+              <FormLabel>Porcentagem de acontecer o evento ( em % )</FormLabel>
               <NumberInput
                 bg={"white"}
                 rounded={8}
                 color={"black"}
-                onChange={(val) => setX(val)}
-                value={xVar}
+                onChange={(val) => setP(val)}
+                value={percentage}
                 min={0}
-                max={nVar}
+                max={100}
               >
                 <NumberInputField />
                 <NumberInputStepper>
